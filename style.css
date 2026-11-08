@@ -579,3 +579,14 @@ input[type="range"]:focus-visible { outline: 3px solid var(--acento); outline-of
   .adesivo-pico small { font-size: 9.5px; }
   .adesivo-pico { gap: 3px; }
 }
+
+/* adesivos com mais respiro entre as linhas (rodada 5) */
+.adesivo-abertura { width: 164px; height: 164px; top: -46px; right: -42px; gap: 9px; }
+.adesivo-pico { gap: 13px; width: clamp(210px, 22vw, 290px); height: clamp(210px, 22vw, 290px); }
+.adesivo-pico small { letter-spacing: .1em; }
+@media (max-width: 900px) {
+  .adesivo-abertura { width: 130px; height: 130px; top: -34px; right: -26px; gap: 6px; }
+  .adesivo-pico { width: 150px; height: 150px; gap: 7px; right: -10px; top: -20px; }
+  .adesivo-pico span { font-size: 46px; }
+}
+@media (min-width: 901px) { .adesivo-abertura { top: -26px; right: -40px; } .adesivo-pico small { font-size: 13px; } }
